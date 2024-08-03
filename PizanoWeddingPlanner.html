@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>title</title>
+</head>
+<body>
+  <h1>The Wedding Planner</h1>
+  
+  
+  <p>Click the button to plan out your wedding tables.</p>
+  
+  <button onclick="myFunction()">Click Here</button>
+  
+  <p id="wedding planner"></p>
+  
+  <script>
+  function myFunction() {
+    let text;
+    let guests = prompt("How many guests do you have");
+    switch(guests) {
+      case "11 guests":
+        let guests = prompt("How many tables do you want?");
+        switch(guests) {
+      case "3 tables":
+        text = "Your 11 guests will be seated as follows: 2 tables of 4, and 1 table of 3.";
+        break;
+      
+      default:
+        text = "N/A";
+    }
+    }
+    document.getElementById("wedding planner").innerHTML = text;
+  }
+  </script>
+</body>
+</html>
